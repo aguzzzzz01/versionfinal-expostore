@@ -377,7 +377,39 @@ function Home() {
               perfumería árabe original, iPhones sellados con garantía Apple y lo último en estética
               capilar profesional.
             </p>
-            <div className="mt-10 flex flex-wrap gap-x-6 gap-y-2 text-[11px] text-muted-foreground/80 font-bold tracking-wide uppercase">
+            <div className="mt-8 flex flex-col gap-3">
+              <motion.a
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.97 }}
+                href="#catalogo"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-yellow-500 via-gold to-amber-600 px-7 py-3.5 text-sm font-black uppercase tracking-widest text-primary-foreground shadow-glow shadow-gold/20 hover:shadow-gold/40 transition-all self-start"
+              >
+                EXPLORAR CATÁLOGO <ArrowRight className="size-4" />
+              </motion.a>
+              <div className="flex flex-wrap gap-3">
+                <motion.a
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
+                  href={waLink("Consulta general")}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-black uppercase tracking-widest text-foreground hover:border-gold/40 hover:bg-white/10 transition-all"
+                >
+                  <MessageCircle className="size-4" /> WHATSAPP
+                </motion.a>
+                <motion.a
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
+                  href="https://whatsapp.com/channel/0029VbASD0s2UPBF6mkysO2S"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-yellow-500 via-gold to-amber-600 px-6 py-3 text-sm font-black uppercase tracking-widest text-primary-foreground shadow-glow shadow-gold/20 hover:shadow-gold/40 transition-all"
+                >
+                  <MessageCircle className="size-4" /> CANAL DE WHATSAPP
+                </motion.a>
+              </div>
+            </div>
+            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-[11px] text-muted-foreground/80 font-bold tracking-wide uppercase">
               <span className="flex items-center gap-1.5">
                 <CheckCircle2 className="size-4 text-gold" /> Stock 100% Real
               </span>
