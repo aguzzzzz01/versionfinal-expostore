@@ -1,0 +1,26 @@
+2026-06-13T16:18:21.833321Z	Cloning repository...
+2026-06-13T16:18:30.048706Z	From https://github.com/aguzzzzz01/versionfinal-expostore
+2026-06-13T16:18:30.049151Z	 * branch            fb17005990ffde5bdf1a6215707653090de88734 -> FETCH_HEAD
+2026-06-13T16:18:30.049323Z	
+2026-06-13T16:19:05.268063Z	HEAD is now at fb17005 Remove Replit branding from the website interface
+2026-06-13T16:19:05.26858Z	
+2026-06-13T16:19:05.390927Z	
+2026-06-13T16:19:05.392589Z	Using v2 root directory strategy
+2026-06-13T16:19:05.413082Z	Success: Finished cloning repository files
+2026-06-13T16:19:08.448866Z	Checking for configuration in a Wrangler configuration file (BETA)
+2026-06-13T16:19:08.449409Z	
+2026-06-13T16:19:08.449528Z	Found wrangler.json file. Reading build configuration...
+2026-06-13T16:19:08.704534Z	A Wrangler configuration file was found but it does not appear to be valid. Did you mean to use wrangler.toml to configure Pages? If so, then make sure the file is valid and contains the `pages_build_output_dir` property. Skipping file and continuing.
+2026-06-13T16:19:08.915112Z	Detected the following tools from environment: npm@10.9.2, nodejs@22.16.0
+2026-06-13T16:19:08.915593Z	Installing project dependencies: npm clean-install --progress=false
+2026-06-13T16:20:21.698309Z	npm error Exit handler never called!
+2026-06-13T16:20:21.698958Z	npm error This is an error with npm itself. Please report this error at:
+2026-06-13T16:20:21.699078Z	npm error   <https://github.com/npm/cli/issues>
+2026-06-13T16:20:21.699149Z	npm error A complete log of this run can be found in: /opt/buildhome/.npm/_logs/2026-06-13T16_19_09_769Z-debug-0.log
+2026-06-13T16:20:21.754303Z	Error: Exit with error code: 1
+2026-06-13T16:20:21.754883Z	    at ChildProcess.<anonymous> (/snapshot/dist/run-build.js)
+2026-06-13T16:20:21.754996Z	    at Object.onceWrapper (node:events:652:26)
+2026-06-13T16:20:21.755077Z	    at ChildProcess.emit (node:events:537:28)
+2026-06-13T16:20:21.75516Z	    at ChildProcess._handle.onexit (node:internal/child_process:291:12)
+2026-06-13T16:20:21.761835Z	Failed: build command exited with code: 1
+2026-06-13T16:20:22.52178Z	Failed: error occurred while running build command
