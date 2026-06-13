@@ -4,6 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Expo Store</title>
+    <style>
+      #replit-badge-container,
+      [id^="replit-badge"],
+      [class*="replit-badge"],
+      [data-replit-badge],
+      iframe[src*="replit.com/badge"],
+      div[style*="replit"] {
+        display: none !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+        visibility: hidden !important;
+      }
+    </style>
+    <script>
+      (function () {
+        function removeBadge() {
+          const selectors = [
+            '#replit-badge-container',
+            '[id^="replit-badge"]',
+            '[class*="replit-badge"]',
+            '[data-replit-badge]',
+            'iframe[src*="replit.com/badge"]',
+          ];
+          selectors.forEach(function (sel) {
+            document.querySelectorAll(sel).forEach(function (el) {
+              el.remove();
+            });
+          });
+          document.querySelectorAll('*').forEach(function (el) {
+            if (
+              el.shadowRoot === null &&
+              el.textContent &&
+              el.textContent.trim() === 'Made with Replit' &&
+              el.children.length === 0
+            ) {
+              var parent = el.closest('div[style], div[id], div[class]') || el.parentElement;
+              if (parent) parent.remove();
+            }
+          });
+        }
+        var observer = new MutationObserver(removeBadge);
+        document.addEventListener('DOMContentLoaded', function () {
+          removeBadge();
+          observer.observe(document.body, { childList: true, subtree: true });
+        });
+        window.addEventListener('load', removeBadge);
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
