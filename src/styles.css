@@ -247,3 +247,13 @@ div[style*="Edit with Lovable"],
   position: absolute !important;
   z-index: -9999 !important;
 }
+
+#replit-badge-container,
+[id^="replit-badge"],
+[class*="replit-badge"],
+[data-replit-badge],
+iframe[src*="replit.com/badge"] {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
